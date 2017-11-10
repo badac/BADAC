@@ -12,26 +12,29 @@
         <p><?php echo $copyright; ?></p>
         <?php endif; ?>
         <nav><?php echo public_nav_main()->setMaxDepth(0); ?></nav>
-        
-        
+
+
          <div id="social">
-        <div id="socialicon">
+        <div class="socialicon">
+
        <?php
-      echo "<a href='https://www.instagram.com/arteuniversidadandes/' target='_blank'><img src='http://andrespardo.digital/badac/files/logos/instagramweb.png'></a>";     
-       ?>   
+      echo "<a href='https://www.instagram.com/arteuniversidadandes/' target='_blank'><i class='fa fa-instagram fa-5' aria-hidden='true'></i> </a>";
+       ?>
+
+
            </div>
-             <div id="socialicon">
+             <div class="socialicon">
         <?php
-      echo "<a href='https://vimeo.com/arteuandes' target='_blank'><img src='http://andrespardo.digital/badac/files/logos/vimeoweb.png'></a>";     
+      echo "<a href='https://vimeo.com/arteuandes' target='_blank'> <i class='fa fa-vimeo fa-5' aria-hidden='true'></i> </a>";
        ?></div>
-                  <div id="socialicon">
+                  <div class="socialicon">
          <?php
-      echo "<a href='https://www.facebook.com/Banco-de-Archivos-Digitales-de-Arte-en-Colombia-BADAC-1405168193033232/' target='_blank'><img src='http://andrespardo.digital/badac/files/logos/facebookweb.png'></a>";     
+      echo "<a href='https://www.facebook.com/Banco-de-Archivos-Digitales-de-Arte-en-Colombia-BADAC-1405168193033232/' target='_blank'> <i class='fa fa-facebook' aria-hidden='true'></i> </a>";
        ?></div>
             </div>
-        
-        
-        
+
+
+
         <div id="tecomeka"><?php echo __('Tecnología de <a href="http://omeka.org" target="_blank">Omeka</a>.'); ?></div>
 
     </div><!-- end footer-content -->

@@ -31,32 +31,34 @@
     <?php queue_js_file('berlin'); ?>
     <?php queue_js_file('globals'); ?>
     <?php echo head_js(); ?>
-    
+
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    
+    <script src="https://use.fontawesome.com/e7c07bb8aa.js"></script>
+    <!--
     <script src="http://andrespardo.digital/badadc/themes/BADAC/javascripts/jscroll-master/jquery.jscroll.js"></script>
-     
+
     <script src="http://andrespardo.digital/badadc/themes/BADAC/javascripts/jscroll-master/jquery.jscroll.min.js"></script>
-    
-    
+    -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jscroll/2.3.9/jquery.jscroll.min.js"></script>
+
 </head>
  <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
     <a href="#content" id="skipnav"><?php echo __('Skip to main content'); ?></a>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
         <header role="banner">
-            
-             
+
+
     <div id="facartes">
-        <?php
-      echo "<a href='https://arte.uniandes.edu.co' target='_blank'><img src='http://andrespardo.digital/badac/files/logos/facartes_web.png'></a>";
-       ?>
+
+ <a href='https://arte.uniandes.edu.co' target='_blank'><img src="<?php echo img('facartes_web2.png'); ?>" /> </a>
+
         </div>
-            
+
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
             <div id="site-title"><?php echo link_to_home_page(theme_logo()); ?></div>
 
   <div id="primary-nav" role="navigation">
-     
+
              <?php
                   echo public_nav_main();
              ?>
@@ -69,10 +71,10 @@
                 <?php echo search_form(); ?>
                 <?php endif; ?>
             </div>
-            
+
         </header>
 
-       
+
 
          <div id="mobile-nav" role="navigation" aria-label="<?php echo __('Mobile Navigation'); ?>">
              <?php
