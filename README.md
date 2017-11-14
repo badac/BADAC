@@ -9,4 +9,8 @@ Este tema ha sido desarrollado por el BADAC/Uniandes para el Catálogo Razonado 
 
 Descargar el archivo .zip conteniedo el tema.
 
-Descomprimirlo en la carpeta  ‘‘‘miomeka/themes/‘‘’
+Descomprimirlo en la carpeta  ```miomeka/themes/```
+
+Instalar el plugin Carousel: https://github.com/omeka/plugin-ShortcodeCarousel
+
+Configurar el tema añadiendo las opciones Site Logo, Header Image y Site title.

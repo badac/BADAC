@@ -90,3 +90,4 @@
     <div id="content" role="main" tabindex="-1">
 
 <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
+</div>

@@ -8,9 +8,7 @@
 <?php echo $this->shortcodes('[carousel showtitles=true sort=added order=d interval=7000 tags=portada]');?>
 
 
-<div id="carouselp">
- <p class="jcarousel-pagination"></p>
-</div>
+
 
 
 <div id="contentbox">
@@ -37,9 +35,9 @@
     <!-- Featured Exhibit -->
     <?php echo exhibit_builder_display_random_featured_exhibit(); ?>
     <?php endif; ?>
-    
+
      <div id="creative">
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0"  
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0"
     src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
     </div>
 
@@ -58,20 +56,20 @@
     <div id="recent-items">
         <h2><?php echo __('Recently Added Items'); ?></h2>
         <?php echo recent_items($recentItems); ?>
-  
+
     </div><!--end recent-items -->
-    
+
     <?php endif; ?>
-    
-     
+
+
     <?php fire_plugin_hook('public_home', array('view' => $this)); ?>
 
 <p class="view-items-link"><a href="<?php echo html_escape(url('items')); ?>"><?php echo __('View All Items'); ?></a></p>
 
 </div><!-- end secondary -->
 
- 
- 
+
+
  </div><!-- end contentbox -->
 
 <?php echo foot(); ?>
