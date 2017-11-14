@@ -18,18 +18,18 @@
         <div class="socialicon">
 
        <?php
-      echo "<a href='https://www.instagram.com/arteuniversidadandes/' target='_blank'><i class='fa fa-instagram fa-5' aria-hidden='true'></i> </a>";
+      echo "<a href='https://www.instagram.com/arteuniversidadandes/' target='_blank'><i class='fa fa-instagram fa-2x' aria-hidden='true'></i> </a>";
        ?>
 
 
            </div>
              <div class="socialicon">
         <?php
-      echo "<a href='https://vimeo.com/arteuandes' target='_blank'> <i class='fa fa-vimeo fa-5' aria-hidden='true'></i> </a>";
+      echo "<a href='https://vimeo.com/arteuandes' target='_blank'> <i class='fa fa-vimeo fa-2x' aria-hidden='true'></i> </a>";
        ?></div>
                   <div class="socialicon">
          <?php
-      echo "<a href='https://www.facebook.com/Banco-de-Archivos-Digitales-de-Arte-en-Colombia-BADAC-1405168193033232/' target='_blank'> <i class='fa fa-facebook' aria-hidden='true'></i> </a>";
+      echo "<a href='https://www.facebook.com/Banco-de-Archivos-Digitales-de-Arte-en-Colombia-BADAC-1405168193033232/' target='_blank'> <i class='fa fa-facebook fa-2x' aria-hidden='true'></i> </a>";
        ?></div>
             </div>
 

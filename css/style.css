@@ -554,6 +554,13 @@ img a {
   border: none;
 }
 
+
+
+  /* @group ----- Utils ----- */
+
+
+
+
 /* @end */
 /* @group ----- Header ----- */
 header {
@@ -564,6 +571,8 @@ header {
   padding: 3em 0 0 0;
   position: relative;
 }
+
+/*
 header:after {
   content: "\0020";
   display: block;
@@ -571,7 +580,7 @@ header:after {
   clear: both;
   visibility: hidden;
 }
-
+*/
 
 #carouselp{
     position: relative;
@@ -583,8 +592,7 @@ header:after {
 
 @media only screen and (min-width: 959px) and (max-width: 1500px) {
 
-    #site-title img {
-    max-width: 80% !important;
+    #site-logo img {
     height: auto;
     margin-top: 4% !important;
     }
@@ -595,7 +603,7 @@ header:after {
 
 
  #primary-nav {
-   float: left !important;
+   float: right !important;
     width: 80% !important;
 
 }
@@ -617,11 +625,11 @@ header:after {
     max-width: 80% !important;
     height: auto;
     }
-
+  /*
     header {
     width: 768px;
   }
-
+  */
 
 
 
@@ -639,17 +647,16 @@ header:after {
   header {
     width: 420px;
   }
-
-
-
-
 }
 
 #header-image {
   position: relative;
   margin: 0 auto;
   padding: 0;
-  width: 960px;
+  display: inline-block;
+  margin: 0 1em 0 1em;
+  height: 100%;
+  vertical-align: middle;
 }
 #header-image:after {
   content: "\0020";
@@ -660,7 +667,8 @@ header:after {
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   #header-image {
-    width: 768px;
+    width: auto;
+    float: left;
   }
 
 
@@ -671,31 +679,27 @@ header:after {
 }
 @media only screen and (max-width: 767px) {
   #header-image {
-    width: 300px;
+    float: left;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   #header-image {
-    width: 420px;
+    float:left;
   }
 }
 #header-image img {
-  width: 100%;
   height: auto;
   vertical-align: bottom;
-  border: solid #ccc;
-  border-width: 1px 1px 0 1px;
 }
 
-#facartes{
+.facartes{
   float: left;
   position: relative;
-  margin-top: -23px;
+  padding: 0 2em 0 2em;
 }
 
 #site-title {
-  float: left;
-  //width: 18% !important;
+  float: none;
   font-weight: normal;
   font-family: 'Raleway', sans-serif;
   color: #015581;
@@ -704,19 +708,25 @@ header:after {
   text-transform: uppercase;
   letter-spacing: .2em;
   position: relative;
-margin-top: -23px;
+  display:inline-block;
 }
-#site-title img {
+
+#site-logo{
+  display: inline-block;
+  padding: 0 1em 0 1em;
+  height: 100%;
+  vertical-align: middle;
+}
+#site-logo img {
   max-width: 100%;
   height: auto;
 }
 
-#site-title a {
+#site-logo a {
   text-decoration: none;
 }
 
 #search-container {
-  float: right;
   position: relative;
   font-size: 1.16667em;
   line-height: 1.28571em;
@@ -735,7 +745,6 @@ margin-top: -23px;
 }
 #search-container input[type=text] {
   padding: 3px;
-  width: 180%;
   behavior: url("../javascripts/boxsizing.htc");
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -874,13 +883,15 @@ margin-top: -23px;
   display: inline-block;
 }
 
+.right-nav{
+  display: inline-block;
+  float:right;
+}
+
 #primary-nav {
-  clear: both;
   position: relative;
   margin: 0 auto 0 auto;
   padding: 0;
-  width: 50%;
-  z-index: 50;
   display: inline-block;
   text-align: center;
   /* mega menu list */
@@ -895,6 +906,7 @@ margin-top: -23px;
   /* list of items within sub-navigation panel */
   /* list item within sub-navigation panel */
 }
+/*
 #primary-nav:after {
   content: "\0020";
   display: block;
@@ -902,20 +914,15 @@ margin-top: -23px;
   clear: both;
   visibility: hidden;
 }
+*/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   #primary-nav {
-    width: 768px;
   }
 }
 @media only screen and (max-width: 767px) {
   #primary-nav {
-    width: 300px;
   }
 }
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  #primary-nav {
-    width: 420px;
-  }
 }
 
 
@@ -931,13 +938,12 @@ margin-top: -23px;
 }
 
 
-#site-title {
+#site-logo {
     float: none;
     width: 310px !important;
      margin-left: auto!important;
      margin-right: auto!important;
     position: relative;
-    margin-top: -10px;
 }
 
 
@@ -961,6 +967,7 @@ margin-top: -23px;
   padding: 0 0 0 1px;
   z-index: 15;
 }
+
 #primary-nav li {
   list-style-type: none;
   margin: 0 0 -1px 0;
@@ -2267,7 +2274,6 @@ footer nav + p {
   /* @group ----- Global selectors ----- */
   #search-container {
     clear: both;
-    //width: 100%;
     margin-top: 1.5em;
     margin-bottom: 0em;
   }
