@@ -595,6 +595,7 @@ header:after {
     #site-logo img {
     height: auto;
     margin-top: 4% !important;
+    vertical-align: middle;
     }
 
     header {
@@ -689,7 +690,7 @@ header:after {
 }
 #header-image img {
   height: auto;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 .facartes{
@@ -702,24 +703,27 @@ header:after {
   float: none;
   font-weight: normal;
   font-family: 'Raleway', sans-serif;
-  color: #015581;
+  /*color: #015581;*/
+  color: black;
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
   letter-spacing: .2em;
   position: relative;
   display:inline-block;
+  margin: 0 1em;
+  vertical-align: middle;
 }
 
 #site-logo{
   display: inline-block;
   padding: 0 1em 0 1em;
   height: 100%;
-  vertical-align: mi
 }
 #site-logo img {
   max-width: 100%;
   height: auto;
+  vertical-align: middle;
 }
 
 #site-logo a {
